@@ -1,0 +1,10 @@
+OBJS = Cpp_file/*.cpp
+CC = g++
+COMPILER_FLAGS = -w -Iinclude
+LINKER_FLAGS = -lSDL2
+LINKER_FLAGS2 = -lSDL2_image
+LINKER_FLAGS3 = -lSDL2_ttf
+LINKER_FLAGS4 = -lSDL2_mixer
+
+all: 
+	$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINKER_FLAGS) $(LINKER_FLAGS2) $(LINKER_FLAGS3) $(LINKER_FLAGS4)  && ./a.out
